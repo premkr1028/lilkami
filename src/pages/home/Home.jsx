@@ -3,7 +3,7 @@ import { Search, Loader2 } from "lucide-react";
 import { useNavigate } from "react-router-dom"; // 1. Import useNavigate
 import axios from "axios";
 
-import HomePageWallpapers from "../../components/homePageWallpapers.jsx";
+import HomePageWallpapers from "../../components/HomePageWallpapers.jsx";
 import inputTags from "../../localData/localData.js";
 
 const CATEGORIES = [
@@ -27,7 +27,7 @@ const Home = () => {
     if (!query.trim()) return;
     setLoading(true);
     try {
-      const res = await axios.get("http://localhost:3000/api/search", {
+      const res = await axios.get("https://lilkami-server.vercel.app/api/search", {
         params: { q: query },
       });
       setSearchResults(res.data || []);
