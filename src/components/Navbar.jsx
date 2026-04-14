@@ -64,8 +64,8 @@ const Navbar = () => {
       {/* Mobile Dropdown Menu */}
       {open && (
         <div className="absolute top-full left-0 w-full bg-white shadow-xl flex flex-col items-center gap-6 py-8 md:hidden z-50 border-t">
-          <Link to="/new" onClick={() => setOpen(false)}>Recent</Link>
-          <Link to="/categories" onClick={() => setOpen(false)}>Blog</Link>
+          <Link to="/recent-wallpapers" onClick={() => setOpen(false)}>Recent</Link>
+          <Link to="/blog" onClick={() => setOpen(false)}>Blog</Link>
           <SignedOut>
             <SignInButton mode="modal" />
           </SignedOut>
