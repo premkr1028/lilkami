@@ -83,7 +83,7 @@ const WallpaperCardComp = ({data,i,tags,visibleTags,MAX_LENGTH}) => {
   {/* Overlay - Moved below the img in DOM so it stacks on top visually */}
   <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 pointer-events-none">
     <div className="flex items-center justify-between text-white w-full pointer-events-auto">
-      <LikeButton data={data} wallpaperId={wallpaperId}/>
+      {/* <LikeButton data={data} wallpaperId={wallpaperId}/> */}
       
       <button
         className="p-2 rounded-full bg-white/20 backdrop-blur-lg hover:bg-white/40 transition-all active:scale-95"

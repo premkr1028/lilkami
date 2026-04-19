@@ -146,8 +146,8 @@ const WallpaperPreview = () => {
               {wallpaper?.description}
             </p>
 
-            <div className="flex items-center gap-3 mb-8 relative z-10">
-              {/* INTERACTIVE LIKE BUTTON */}
+            {/* <div className="flex items-center gap-3 mb-8 relative z-10">
+              INTERACTIVE LIKE BUTTON
               <button 
                 onClick={handleLike}
                 disabled={isSyncingLike}
@@ -165,7 +165,7 @@ const WallpaperPreview = () => {
                   {wallpaper?.likes?.length || 0}
                 </span>
               </button>
-            </div>
+            </div> */}
 
             {/* DOWNLOAD SECTION */}
             <div className="mb-10 relative z-10">

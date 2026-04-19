@@ -124,7 +124,7 @@ const Profile = () => {
           >
             My Wallpapers
           </li>
-
+{/* 
           <li
             onClick={() => setActiveTab("liked")}
             className={`cursor-pointer pb-2 border-b-2 transition
@@ -134,7 +134,7 @@ const Profile = () => {
             `}
           >
             Liked Wallpapers
-          </li>
+          </li> */}
         </ul>
 
         {/* Content */}
